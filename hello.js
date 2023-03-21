@@ -13,11 +13,21 @@
 //----------------------------------------------------------------------------------------------------------------------
 // function uniqueInOrder(iterable) {
 //     let newArr = [];
-    // for (let i = 0; i < iterable.length; i++) {
-    //     if (iterable[i] !== iterable[i + 1]) newArr.push(iterable[i]);
-    // }
-    // return newArr;
-}
+// for (let i = 0; i < iterable.length; i++) {
+//     if (iterable[i] !== iterable[i + 1]) newArr.push(iterable[i]);
+// }
+// return newArr;
+// }
 // console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 //uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+//----------------------------------------------------------------------------------------------------------------------
+// https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+//----------------------------------------------------------------------------------------------------------------------
+// function narcissistic(value) {
+//     let newStr = value.toString().split('').map(item => Number(item));
+//     let result = newStr.reduce((acc,item) => acc += item ** newStr.length,0);
+//     return newStr.length === 1 ? true : result === +newStr.join('') ? true : false;
+// }
+//
+//     console.log(narcissistic(54748));
 //----------------------------------------------------------------------------------------------------------------------
