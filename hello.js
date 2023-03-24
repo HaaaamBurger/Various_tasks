@@ -33,11 +33,12 @@
 //----------------------------------------------------------------------------------------------------------------------
 // https://www.codewars.com/kata/5552101f47fc5178b1000050/train/javascript
 //----------------------------------------------------------------------------------------------------------------------
-function digPow(n, p){
-    let upper = p;
-    let res = n.toString().split('').reduce((acc,item) => acc += Number(item) ** upper++ ,0);
-    return (res == n * );
-}
-
-console.log(digPow(695, 2));
+// function digPow(n, p){
+//     let upper = p;
+//     let res = n.toString().split('').reduce((acc,item) => acc += Number(item) ** upper++ ,0);
+//     let k = res / n;
+//     return (k > 0 && Number.isInteger(k)) ? k : -1;
+// }
+//
+// console.log(digPow(695, 2));
 //----------------------------------------------------------------------------------------------------------------------
