@@ -41,5 +41,45 @@
 // }
 //
 // console.log(digPow(695, 2));
-
+//----------------------------------------------------------------------------------------------------------------------
+// Пагінація
+//----------------------------------------------------------------------------------------------------------------------
+// const objArr = [];
+// for (let i = 1; i <= 100; i++) {
+//     objArr.push(i.toString());
+// }
+//
+// const next = document.getElementsByClassName('next')[0];
+// const prev = document.getElementsByClassName('prev')[0];
+// const wrapper = document.getElementsByClassName('wrapper')[0];
+//
+// let page = 1;
+// const handler = (page, limit = 10) => {
+//     const minPage = (page - 1) * limit;
+//     const maxPage = page * limit;
+//
+//     if (minPage < 1) {
+//         prev.setAttribute('disabled', 'disabled');
+//     } else {
+//         prev.removeAttribute('disabled')
+//     }
+//     if (maxPage === 100) {
+//         next.setAttribute('disabled', 'disabled');
+//     } else {
+//         next.removeAttribute('disabled');
+//     }
+//
+//     const children = [];
+//     for (let i = minPage; i < maxPage; i++) {
+//         const div = document.createElement('div');
+//         div.innerText = `${objArr[i]}`;
+//         children.push(div);
+//     }
+//     wrapper.replaceChildren(...children)
+// }
+//
+// handler(page);
+//
+// next.onclick = () => handler(page += 1);
+// prev.onclick = () => handler(page -= 1);
 //----------------------------------------------------------------------------------------------------------------------
